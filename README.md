@@ -20,7 +20,7 @@ For Impulse Script:
 data/Impulse/CONVER.PY
 ```
 
-config.py is left out due to secret api keys, however this script is formated in:
+config.py format:
 
 ```bash
 # config.py
