@@ -9,12 +9,13 @@ https://learn.microsoft.com/en-us/visualstudio/ide/ai-assisted-development-visua
 
 
 
-https://github.com/user-attachments/assets/d3396cee-14fc-48a8-b4b5-20ce73d09e81
+
+https://github.com/user-attachments/assets/b8068dbb-6146-424e-83da-5a7c0140560b
 
 
 
 Example of Max MSP Output:
-[Output WAV](https://github.com/user-attachments/files/26721184/EXAMPLE.wav)
+https://github.com/user-attachments/files/26721184/EXAMPLE.wav
 
 For Cultivation Script:
 ```bash
