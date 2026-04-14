@@ -1,11 +1,13 @@
 ![imaeg](https://github.com/user-attachments/assets/ee394171-0592-4676-910b-d0bb6031c6bb)
-[EXAMPLE.wav](https://github.com/user-attachments/files/26721184/EXAMPLE.wav)
+
 # From Mushrooms to Music: Harnessing Bioelectricity for Creative Expression
 ## Disclaimer: The use of built in VS Studio AI tools such as GitHub Copilot and IntelliCode have been used!
-
-
 Infomation regarding AI usage within the project:
 https://learn.microsoft.com/en-us/visualstudio/ide/ai-assisted-development-visual-studio?view=visualstudio
+
+
+Example of Max MSP Output:
+[Output WAV](https://github.com/user-attachments/files/26721184/EXAMPLE.wav)
 
 For Cultivation Script:
 ```bash
