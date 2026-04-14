@@ -66,6 +66,41 @@ USB_IMG_SUBDIR_NAME = "img_log"
 LOCAL_CSV = "data_log_local.csv"
 ```
 
+#Arduino Script For Signal Acquisition:
+```bash
+void setup() {
+  Serial.begin(9600);
+
+  // Use default 5V reference
+  analogReference(DEFAULT);
+
+  // Header for clarity
+  Serial.println("raw,averaged");
+}
+
+void loop() {
+  const int samples = 16;
+  long sum = 0;
+
+  // Take one raw reading first
+  int rawValue = analogRead(A0);
+
+  // Then do averaging
+  for (int i = 0; i < samples; i++) {
+    sum += analogRead(A0);
+  }
+
+  int averagedValue = sum / samples;
+
+  // Print raw and averaged values
+  Serial.print(rawValue);
+  Serial.print(",");
+  Serial.println(averagedValue);
+
+  delay(5);
+}
+```
+
 ## Author
 - [@Babalon921](https://github.com/Babalon921/)
 - Harry Gray 3rd Year Module: AMT6001
