@@ -13,9 +13,14 @@ Experiment Timelapse:
 
 https://github.com/user-attachments/assets/b8068dbb-6146-424e-83da-5a7c0140560b
 
-Example of Max MSP Output:
+Example of Triggering:
 
 https://github.com/user-attachments/files/26721184/EXAMPLE.wav
+
+Example of Texture & Convolution Reverb:
+
+[TEXTURE_EXAMPLE.wav](https://github.com/user-attachments/files/26721879/TEXTURE_EXAMPLE.wav)
+
 
 For Cultivation Script:
 ```bash
