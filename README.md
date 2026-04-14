@@ -5,10 +5,13 @@
 Infomation regarding AI usage within the project:
 https://learn.microsoft.com/en-us/visualstudio/ide/ai-assisted-development-visual-studio?view=visualstudio
 
-To run script type:
-
+For Cultivation Script:
 ```bash
-python3 ./Mushroom_V2.py
+Mushroom_V2.py
+```
+For Impulse Script:
+```bash
+data/Impulse/CONVER.PY
 ```
 
 config.py is left out due to secret api keys, however this script is formated in:
