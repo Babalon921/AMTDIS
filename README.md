@@ -9,13 +9,11 @@ https://learn.microsoft.com/en-us/visualstudio/ide/ai-assisted-development-visua
 
 
 
-
+Example of Cultivation Timelapse:
 https://github.com/user-attachments/assets/b8068dbb-6146-424e-83da-5a7c0140560b
 
-
-
 Example of Max MSP Output:
-https://github.com/user-attachments/files/26721184/EXAMPLE.wav
+[WAV DOWNLOAD]https://github.com/user-attachments/files/26721184/EXAMPLE.wav
 
 For Cultivation Script:
 ```bash
