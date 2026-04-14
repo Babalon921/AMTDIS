@@ -8,6 +8,11 @@ Infomation regarding AI usage within this project:
 https://learn.microsoft.com/en-us/visualstudio/ide/ai-assisted-development-visual-studio?view=visualstudio
 
 
+
+https://github.com/user-attachments/assets/d3396cee-14fc-48a8-b4b5-20ce73d09e81
+
+
+
 Example of Max MSP Output:
 [Output WAV](https://github.com/user-attachments/files/26721184/EXAMPLE.wav)
 
