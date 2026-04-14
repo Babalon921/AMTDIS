@@ -9,7 +9,7 @@ https://learn.microsoft.com/en-us/visualstudio/ide/ai-assisted-development-visua
 
 
 
-Example of Cultivation Timelapse:
+Experiment Timelapse:
 
 https://github.com/user-attachments/assets/b8068dbb-6146-424e-83da-5a7c0140560b
 
