@@ -67,6 +67,6 @@ LOCAL_CSV = "data_log_local.csv"
 ```
 
 ## Author
-- [@Babalon921](https://github.com/Babalon921/))
+- [@Babalon921](https://github.com/Babalon921/)
 - Harry Gray 3rd Year Module: AMT6001
 - [University of Plymouth BSc Audio Music Technology](https://www.plymouth.ac.uk/)
