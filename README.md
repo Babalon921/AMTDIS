@@ -15,7 +15,7 @@ https://github.com/user-attachments/assets/b8068dbb-6146-424e-83da-5a7c0140560b
 
 Example of Triggering:
 
-https://github.com/user-attachments/files/26721184/EXAMPLE.wav
+[TRIGGERING WAV.wav](https://github.com/user-attachments/files/26721184/EXAMPLE.wav)
 
 Example of Texture & Convolution Reverb:
 
