@@ -2,7 +2,7 @@
   <img src="https://github.com/user-attachments/assets/ee394171-0592-4676-910b-d0bb6031c6bb" alt="Plymouth Image"/>
 </p>
 
-# From Mushrooms to Music: Harnessing Bioelectricity for Creative Expression
+# From Mushrooms to Music: The Creative Constraints of Mycelium Sonification
 ## Disclaimer: The use of built in VS Studio AI tools such as GitHub Copilot and IntelliCode have been used!
 Infomation regarding AI usage within this project:
 https://learn.microsoft.com/en-us/visualstudio/ide/ai-assisted-development-visual-studio?view=visualstudio
