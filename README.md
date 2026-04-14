@@ -2,7 +2,7 @@
 
 # From Mushrooms to Music: Harnessing Bioelectricity for Creative Expression
 ## Disclaimer: The use of built in VS Studio AI tools such as GitHub Copilot and IntelliCode have been used!
-Infomation regarding AI usage within the project:
+Infomation regarding AI usage within this project:
 https://learn.microsoft.com/en-us/visualstudio/ide/ai-assisted-development-visual-studio?view=visualstudio
 
 
