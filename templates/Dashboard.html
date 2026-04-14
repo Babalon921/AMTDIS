@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mushroom Monitoring Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 800px;
+      height: 480px;
+      background: radial-gradient(circle at center, #0d1b0f 0%, #050805 80%);
+      font-family: 'Courier New', monospace;
+      display: flex;
+      flex-direction: row;
+      color: #aef2c4;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logo {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 90px;
+      height: auto;
+      opacity: 0.9;
+      z-index: 10;
+      border-radius: 8px;
+      filter: invert(80%) hue-rotate(120deg) saturate(120%);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+    }
+
+    .data-panel {
+      background: linear-gradient(145deg, #0f2b14, #142f18);
+      padding: 20px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 15px;
+      color: #b9f5cc;
+      border-right: 2px solid #0a5e1a;
+      box-shadow: inset 0 0 15px #0b4416;
+      overflow: hidden;
+    }
+
+    .data-item {
+      font-size: 1.2rem;
+      border-bottom: 1px solid #205d2a;
+      padding: 6px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .status-on { color: #00ff88; text-shadow: 0 0 5px #00ff88; }
+    .status-off { color: #ff5f5f; text-shadow: 0 0 5px #ff5f5f; }
+
+    .log-panel {
+      background: #000;
+      color: #0f0;
+      padding: 6px;
+      font-family: monospace;
+      font-size: 0.75rem;
+      line-height: 1.2rem;
+      max-height: none;
+      overflow: hidden;
+      border-top: 2px solid #0a5e1a;
+      margin-top: 10px;
+    }
+
+    .camera-panel {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at center, #001a07 0%, #000000 90%);
+      padding: 10px;
+    }
+
+    .camera-panel img {
+      max-width: 100%;
+      max-height: 100%;
+      border: 3px solid #00ff99;
+      border-radius: 14px;
+      box-shadow: 0px 0px 20px #00ff88aa;
+    }
+  </style>
+
+  <script>
+    async function refreshStatus() {
+      try {
+        const res = await fetch('/status');
+        const data = await res.json();
+
+        document.getElementById("sensor1").textContent = data.sensor1.toFixed(2);
+        document.getElementById("sensor2").textContent = data.sensor2.toFixed(2);
+        document.getElementById("sensor3").textContent = data.sensor3.toFixed(2);
+
+        const d1 = document.getElementById("device1");
+        d1.textContent = data.device1 ? "ON" : "OFF";
+        d1.classList.remove("status-on","status-off");
+        d1.classList.add(data.device1 ? "status-on":"status-off");
+
+        const d2 = document.getElementById("device2");
+        d2.textContent = data.device2 ? "ON" : "OFF";
+        d2.classList.remove("status-on","status-off");
+        d2.classList.add(data.device2 ? "status-on":"status-off");
+
+      } catch(e){
+        console.error("refreshStatus failed", e);
+      }
+    }
+
+    async function fetchLogs() {
+      try {
+        const res = await fetch("/logs");
+        const logs = await res.json();
+        const logContainer = document.getElementById("log-container");
+        const lastLogs = logs.slice(-5); // show last 5 logs
+        logContainer.innerHTML = lastLogs.join("<br>");
+      } catch(e){
+        console.error("fetchLogs failed", e);
+      }
+    }
+
+    setInterval(refreshStatus, 5000);
+    setInterval(fetchLogs, 1000);
+    window.onload = () => { refreshStatus(); fetchLogs(); };
+  </script>
+</head>
+
+<body>
+  <img src="{{ url_for('static', filename='Plymouth.png') }}" alt="Plymouth Logo" class="logo">
+
+  <div class="container">
+    <div class="data-panel">
+      <h1></h1>
+      <div class="data-item"><span>Humidity:</span> <span id="sensor1">0</span>%</div>
+      <div class="data-item"><span>CO₂:</span> <span id="sensor2">0</span> ppm</div>
+      <div class="data-item"><span>Temp:</span> <span id="sensor3">0</span> °C</div>
+      <div class="data-item"><span>Humidifier:</span> <span id="device1" class="status-off">OFF</span></div>
+      <div class="data-item"><span>Air Pump:</span> <span id="device2" class="status-off">OFF</span></div>
+
+      <div class="log-panel">
+        <strong>Live Logs:</strong>
+        <div id="log-container"></div>
+      </div>
+    </div>
+
+    <div class="camera-panel">
+      <img src="{{ url_for('video_feed') }}" alt="Live Feed">
+    </div>
+  </div>
+</body>
+</html>
