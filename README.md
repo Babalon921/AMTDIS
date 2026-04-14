@@ -1,14 +1,8 @@
 ## Mushroom Cultivation Script
-# Disclaimer: The use of built in VS Studio AI tools such as GitHub Copilot and IntelliCode (AI Tools)!
-# Full Transparency is taken, with no obfuscation of use of these tools, however the code is iterated, added too, and optimised by AI, base functionality’s remain coded by myself.
-
-# AI HAS BEEN USED
+# Disclaimer: The use of built in VS Studio AI tools such as GitHub Copilot and IntelliCode have been used!
 
 Infomation regarding AI usage within the project:
 https://learn.microsoft.com/en-us/visualstudio/ide/ai-assisted-development-visual-studio?view=visualstudio
-
-
-
 
 To run script type:
 
