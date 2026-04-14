@@ -28,7 +28,7 @@ Mushroom_V2.py
 ```
 For Impulse Script:
 ```bash
-data/Impulse/CONVER.PY
+data/Impulse/CONVER.py
 ```
 
 config.py format:
@@ -81,7 +81,7 @@ USB_IMG_SUBDIR_NAME = "img_log"
 LOCAL_CSV = "data_log_local.csv"
 ```
 
-#Arduino Script For Signal Acquisition:
+# Arduino Script For Signal Acquisition:
 ```bash
 void setup() {
   Serial.begin(9600);
