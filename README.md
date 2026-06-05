@@ -7,6 +7,8 @@
 Infomation regarding AI usage within this project:
 https://learn.microsoft.com/en-us/visualstudio/ide/ai-assisted-development-visual-studio?view=visualstudio
 
+Dissertation:
+[HGRAY_DISSERTATION_APRIL26.pdf](https://github.com/user-attachments/files/28651611/HGRAY_DISSERTATION_APRIL26.pdf)
 
 
 Experiment Timelapse:
